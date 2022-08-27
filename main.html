@@ -6,38 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Sign Up</title>
+    <title>Register</title>
 </head>
 
 <body>
     <form>
-        <label for="name">Full Name :</label>
-        <input type="text" name="name" id="name" placeholder="Enter Your Name">
-        <br>
-        <label for="email">Email :</label>
-        <input type="text" id="email" placeholder="...@hotmail.com">
-        <br>
-        <label for="phone">Phone Number :</label>
-        <input type="text" id="phone" placeholder="Phone Number">
-        <br>
-        <label for="password">Password :</label>
-        <input type="password" id="password" placeholder="Password">
-        <br>
-        <label for="gender">Gender :</label>
-        <input type="radio" name="gender" id="male"><label for="male">Male</label>
-        <input type="radio" name="gender" id="female"><label for="female">Female</label>
-        <br>
-        <label for="address">Address :</label>
-        <br>
-        <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter Your Address"></textarea>
-        <br>
-        <label for="upload">Upload Photo :</label>
-        <input type="file" id="upload">
+        <table>
+            <tr>
+                <td><label for="name">Full Name </label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter Your Name"></td>
+            </tr>
 
-        <br><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
+            <tr>
+                <td><label for="email">Email </label></td>
+                <td><input type="email" id="email" placeholder="...@gmail.com"></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone Number</label></td>
+                <td><input type="number" id="phone" placeholder="628..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" placeholder="Password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea name="address" id="address" cols="20" rows="4"
+                        placeholder="Enter Your Address"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="upload">Upload Photo</label></td>
+                <td><input type="file" id="upload"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+
+        </table>
 </body>
 
 </html>
